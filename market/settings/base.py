@@ -109,6 +109,7 @@ CORS_ALLOWED_WHITELIST=[
     "https://sub.example.com",
     "http://localhost:8080",
     "http://127.0.0.1:9000",
+    "https://market-site-app.onrender.com"
 ]
 
 SIMPLE_JWT ={
