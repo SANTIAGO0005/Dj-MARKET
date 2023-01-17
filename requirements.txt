@@ -45,8 +45,8 @@ PyYAML==6.0
 qrcode==7.3.1
 reportlab==3.6.11
 requests==2.28.1
-ruamel.yaml==0.17.21
-ruamel.yaml.clib==0.2.6
+ruamel.yaml
+ruamel.yaml.clib
 six==1.16.0
 sqlparse==0.4.2
 svglib==1.4.1
@@ -61,3 +61,4 @@ uritools==4.0.0
 urllib3==1.26.12
 webencodings==0.5.1
 xhtml2pdf==0.2.8
+dj-database-url

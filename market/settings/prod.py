@@ -1,20 +1,19 @@
 from .base import *
-
+import dj_database_url
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'marketdb',
-        'USER': 'Django',
-        'PASSWORD': '1q2w3e4r5t',
-        'HOST': 'localhost',
-        'PORT': '7000',
-    }
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
+
+TATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR,'static']
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR,'media'
