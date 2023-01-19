@@ -12,7 +12,7 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
-TATIC_URL = '/static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR,'static']
 
 MEDIA_URL = '/media/'
