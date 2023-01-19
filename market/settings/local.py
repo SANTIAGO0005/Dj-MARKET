@@ -11,10 +11,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'marketdb',
-        'USER': 'Django',
-        'PASSWORD': '1q2w3e4r5t',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
         'HOST': 'localhost',
-        'PORT': '7000',
+        'PORT': '5432',
     }
 }
 #
